@@ -1,0 +1,47 @@
+#main{
+    margin: 0;
+    height: 100vh;
+     background-color: black;
+     overflow: hidden;
+}
+h3{
+    color: white;
+    position: absolute;
+    left: 50%;
+top: 40%;
+transform: translate(-50%,-50%);
+}
+span{
+background-image:url("https://cdn0.iconfinder.com/data/icons/love-hand-drawn-color/64/heart-256.png"); 
+width: 200;
+height: 200px;
+position: absolute;
+pointer-events: none;
+background-size: cover;
+left: 50%;
+top: 50%;
+transform: translate(-50%,-50%);
+animation: animate 6s linear;
+
+}
+p{
+    color: white;
+    position: absolute;
+
+    left: 50%;
+top: 50%;
+transform: translate(-50%,-50%);
+}
+
+@keyframes animate {
+    0%{
+        transform: translate(-50%,-50%);
+        opacity: 1;
+        filter: hue-rotate(0);
+    }
+    100%{
+        transform: translate(-50%,-5000%);
+        opacity: 0;
+        filter: hue-rotate(720deg);
+    }
+}
